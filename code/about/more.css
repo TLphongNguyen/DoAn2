@@ -1,0 +1,233 @@
+.video-youtube {
+    width: 100%;
+    height: 100%;
+    border-radius : 30px;
+}
+.gwap-video {
+    margin: 0px auto 0 auto;
+    width: 780px;
+    height: 430px;
+    position: relative;
+    
+}
+.body-content {
+    margin: 80px 0;
+}
+.gwap-video:hover .content-video {
+    display: flex;
+    cursor: pointer;
+}
+.content-video {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top : 0;
+    padding: 10px 16px 0 16px;
+    display: none;
+}
+.title-video {
+    display: flex;
+    align-items: center;
+}
+.logo-app {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.logo-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.title-text {
+    font-size: 18px;
+    color : #eeee;
+}
+.more-video__icon {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 6px;
+    
+}
+.view-late {
+    margin-right: 10px;
+}
+.more-video {
+    display: flex;
+    color : #eeee;
+}
+.about-content {
+    margin: 3.5rem auto 0;
+    width: 780px;
+}
+.header-title.about {
+    padding: 0 120px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+}
+.about-des {
+    font-size: 18px;
+    color : var(--textColor);
+    margin-bottom: 16px;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 24px;
+}
+
+.m-0 {
+    margin-right: 0;
+}
+.voucher-sale__about {
+    color : var(--buttonColor);
+    margin: 10px 0;
+    display: block;
+}
+.about-date {
+    font-size: 14px;
+    color : var(--textColor);
+    margin-top: 10px;
+}
+.title-link {
+    margin: 10px 0;
+}
+.family-more {
+    margin: 4rem auto 0 !important;
+}
+.business-new {
+    background-color: #f9f9fa;
+    padding: 80px 0;
+}
+.timeline {
+    position: relative;
+    margin-bottom: 80px;
+    padding-top: 60px;
+}
+.timeline-item.right {
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 0;
+}
+.timeline-item {
+    
+    padding-right: 60px;
+    position: relative;
+    padding-top: 100px;
+}
+.gwap-item {
+    flex-direction: column!important;
+}
+.new-content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.new-content .inner-date {
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    right: 224px;
+    top: 132px;
+
+
+
+}
+.new-content.right {
+    flex-direction: row;
+}
+.new-content.right .inner-date {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    top: 32px;
+    right: 196px;
+}
+.new-media {
+    /* -webkit-box-flex: 0; */
+    -webkit-flex: 0 0 164px;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 164px;
+    flex: 0 0 164px;
+    max-width: 164px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    max-height: 294px;
+}
+.link-media {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(circle,#fff,#000);
+    height: 100%;
+}
+.img-media {
+    object-fit: contain;
+    height: 100%;
+}
+.inner-date {
+    position: absolute;
+    background: #dc2323;
+    display: block;
+    color: #fff;
+    max-width: max-content;
+    padding: 15px 30px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+}
+.inner-text {
+    display: block;
+    margin-top: 100px;
+    padding-right: 28px;
+    width: 280px;
+    height: 156px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 6!important;
+    -webkit-box-orient: vertical;
+    opacity: 0.8;
+    text-align: right;
+}
+.new-content.right .inner-text {
+    padding-right: 0;
+    padding-left: 28px;
+    text-align: left;
+}
+.timeline::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 50%;
+    border-right: 1px solid #e8eaeb;
+    height: calc(100% - 132px);
+
+}
+.timeline-item::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    top: 102px;
+    background: url(https://cdn-www.vinid.net/e897ce0a-timeline-icon.png);
+    z-index: 10;
+}
+.timeline-item.right::before {
+    top: 0;
+    left: -12px;
+    right: auto;
+}
