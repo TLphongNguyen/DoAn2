@@ -1,0 +1,109 @@
+.outstanding-offers {
+    background-color: #f9f9fa;
+    padding-top: 32px;
+}
+.outstanding-offers__title {
+    font-size: 28px;
+    color : var(--textColor);
+    line-height: 1.2;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+.news-bottom__gwap {
+    padding: 60px 0;
+}
+.new-more {
+    width: 70%;
+    margin-right: 10px;
+}
+.gwap-new__more {
+    max-width: 292px;
+    height: 160px;
+    overflow: hidden;
+    
+}
+.img-new__more {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    
+}
+.category-new__more {
+    color: #dc2323;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.title-new__more {
+    font-size: 18px;
+    color: var(--textColor);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+    line-height: 24px;
+    max-height: 48px;
+}
+.des-new__more {
+    color: #3c3d48;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+    max-height: 40px;
+
+}
+.new-most {
+    width: 29%;
+}
+.date-new__more {
+    font-size: 14px;
+    color: #3c3d48;
+    margin: 8px 0;
+    opacity: .5;
+}
+.pagination {
+    position: static;
+    width: 44%;
+}
+.new-more__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#select-arrange {
+    background-color: rgba(1,18,34,.05);
+    border-radius: 23px;
+    outline: none;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 24px;
+}
+.line-bottom {
+    height: 1px;
+    width: 100%;
+    background: rgba(1,18,34,.05);
+    border-radius: 4px;
+    margin: 16px 0;
+}
+.item-new__most {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+.number-new__most {
+    color: rgba(1,18,34,.3);
+    font-size: 20px;
+    margin-right: 16px;
+}
+.content-new__most {
+    font-size: 14px;
+    color: var(--textColor);
+    font-weight: 800;
+    margin-bottom: 8px;
+}

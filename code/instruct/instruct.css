@@ -1,0 +1,118 @@
+.img-gwap__header {
+    height: 224px;
+    width: 100%;
+}
+.img-header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sline-down__app {
+    background-color: #343a40;
+    padding: 24px 0;
+}
+.gwap-down__app {
+    display: flex;
+    align-items: center;
+}
+.title-down__load {
+    
+    font-size: 16px;
+    color : #f8f9fa;
+    text-align: right;
+    line-height: 20px;
+}
+.img-down__app {
+    display: flex;
+    align-items: center;
+}
+.img-qr__down {
+    width: 116px;
+    height: 116px;
+    margin-right: 16px;
+}
+.img-iphone__link {
+    display: block;
+    margin-bottom: 16px;
+}
+.instruct-in__mobile {
+    padding: 54px 0;
+    background-color: #f8f9fa;
+}
+.instruct-mobile__detail {
+    justify-content: flex-start;
+    position: relative;
+}
+.title-instruct {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    color : var(--textColor);
+    padding-bottom: 64px;
+    position: relative;
+}
+.title-instruct::after {
+    content: "";
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 4px;
+    background: #e0232a;
+}
+.detail-img__link,.img-arrow {
+    max-width: 100%;
+    height: auto;
+}
+
+.step-content {
+    padding: 10px 0;
+    margin-bottom: 16px;
+    text-align: center;
+    width: 225px;
+    font-size: 16px;
+    color : var(--textColor);
+    background-color: #ffc107;
+    border-radius: 5px;
+    font-weight: 750;
+}
+.mobile__detail--step {
+    display: flex;
+    justify-content: center;
+}
+.mobile__detail--des {
+    padding: 0 15px;
+    margin-top: 16px;
+}
+.des-content {
+    font-size: 16px;
+    color : var(--textColor);
+    opacity: 0.9;
+    font-weight: 300;
+    line-height: 24px;
+}
+.use-vinid {
+    padding: 50px 0;
+
+}
+.use-vinid__des {
+    text-align: center;
+    font-size: 16px;
+    color:var(--textColor);
+    margin-bottom: 16px;
+    line-height: 24px;
+    opacity: 0.8;
+}
+.use-vinid__des.second {
+    margin-top: 10px;
+    width: 780px;
+    margin: 0 auto;
+}
+.mobile__detail--des {
+    width: 100%;
+}
+.img-use__link {
+    margin: 0 auto;
+    display: block;
+}
