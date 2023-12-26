@@ -208,49 +208,49 @@ let listBeatyful = [
 const serviceListitem = [
   listFood = [
     {
-      img : '/img/voucher/amthuc/food1.png',
+      img : '/img/voucher/amthuc/food7.png',
       sale : 'chỉ 1,000đ',
       title : ' [Toàn quốc] Trà sen vàng Highlands Coffee size M chỉ 1,000đ ',
       description : ' Chi tiết chương trình Voucher mua Trà sen vàng size M chỉ 1,000đ áp dụng khi mua đơn bất kỳ từ 50,000đ trở lên. *Khách hàng có…'
     },
     {
-      img : '/img/voucher/amthuc/food2.png',
+      img : '/img/voucher/amthuc/food8.png',
       sale : 'Giảm 20,000đ',
       title : '  [Hà Nội – Nghệ An] Giảm 20,000đ đồ uống Phúc Long siêu chất ',
       description : '  Chi tiết chương trình Voucher giảm 20,000đ cho hóa đơn từ 55,000đ trở lên áp dụng tại 18 chi nhánh Phúc Long ở Hà Nội và Nghệ…'
     },
     {
-      img : '/img/voucher/amthuc/food3.png',
+      img : '/img/voucher/amthuc/food1.png',
       sale : 'chỉ 1,000đ',
       title : '  [Hà Nội] Som Tum Thai giảm 100,000đ Món Thái ngon chuẩn vị  ',
       description : '  Chi tiết chương trình Voucher giảm 100,000đ cho hóa đơn từ 500,000đ khi sử dụng dịch vụ tại nhà hàng Som Tum Thai - chi nhánh Lotte…'
     },
     {
-      img : '/img/voucher/amthuc/food4.png',
+      img : '/img/voucher/amthuc/food2.png',
       sale : 'chỉ 1,000đ',
       title : '  [TP. HCM] Phở 24 giảm 40,000đ ăn tại cửa hàng  ',
       description : '  Chi tiết chương trình Voucher giảm 40,000đ cho hóa đơn từ 150,000đ áp dụng khi ăn tại Cửa hàng Phở 24. Thời gian áp dụng: Từ 26/05/2023…'
     },
     {
-      img : '/img/voucher/amthuc/food5.png',
+      img : '/img/voucher/amthuc/food3.png',
       sale : 'chỉ 1,000đ',
       title : '  [Toàn quốc] Mua 02 tính tiền 01 tại Highlands Coffee  ',
       description : '  Chi tiết chương trình Voucher áp dụng khi mua combo 02 đồ uống Highlands: 01 ly cỡ lớn (Cà Phê Truyền Thống, Trà, Freeze và PhinDi'
     },
     {
-      img : '/img/voucher/amthuc/food6.png',
+      img : '/img/voucher/amthuc/food4.png',
       sale : 'chỉ 1,000đ',
       title : '  [Hà Nội] Botejyu giảm 50,000đ Ẩm thực Nhật Bản nổi tiếng ',
       description : '  Chi tiết chương trình Giảm 50,000đ cho hóa đơn từ 300,000đ trở lên tại nhà hàng Botejyu, thương hiệu Nhật Bản khởi sinh từ Osaka. Thời gian…'
     },
     {
-      img : '/img/voucher/amthuc/food7.png',
+      img : '/img/voucher/amthuc/food5.png',
       sale : 'chỉ 1,000đ',
       title : ' [Toàn quốc]  [Hà Nội] Nhà hàng Ruby giảm 20% Set Valentine’s Special Menu  ',
       description : '  Chi tiết chương trình Giảm 20% Set Valentine’s Special Menu tại Nhà hàng Ruby (Giá gốc: 2,500,000đ/set/02 người chỉ còn 2,000,000đ/set/02 người). Thời gian áp dụng: 14/02/2023. Cách…'
     },
     {
-      img : '/img/voucher/amthuc/food8.png',
+      img : '/img/voucher/amthuc/food7.png',
       sale : 'chỉ 1,000đ',
       title : ' [Toàn quốc] Trà sen vàng Highlands Coffee size M chỉ 1,000đ ',
       description : '  Chi tiết chương trình Voucher giảm 50% cho khách hàng khi mua Hạt cà phê Espresso Robusta của Milano Coffee gói 250g với giá 25,000đ. Thời gian…'
@@ -513,23 +513,15 @@ const listForm = document.querySelector('.list-voucher')
 const widthItem = document.querySelector('.item-voucher').offsetWidth +20
   nextService.onclick = () => {
         listForm.scrollLeft += widthItem;
-        checkAndResetScroll();
+        
     };
 
     prevService.onclick = () => {
         listForm.scrollLeft -= widthItem;
-        checkAndResetScroll();
+        
     };
 
-    function checkAndResetScroll() {
-        if (listForm.scrollLeft >= listForm.scrollWidth - listForm.offsetWidth) {
-            // Nếu đang cuộn tới cuối, reset về phần tử đầu tiên
-            listForm.scrollLeft = 0;
-        } else if (listForm.scrollLeft <= 0) {
-            // Nếu đang cuộn tới đầu, reset về phần tử cuối cùng
-            listForm.scrollLeft = listForm.scrollWidth - listForm.offsetWidth;
-        }
-    }
+    
 
 
 
