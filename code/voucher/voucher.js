@@ -326,11 +326,11 @@ function render(itemServices) {
   const itemService = itemServices.map((food) =>{
     return ` 
     <li class="item-voucher col m-3">
-      <a href="#" class="voucher-img">
+      <a href="/code/product/product.html" class="voucher-img">
         <img src="${food.img}" alt="">
       </a>
       <span class="voucher-sale">${food.sale}</span>
-      <a href="" class="title-link">
+      <a href="/code/product/product.html" class="title-link">
         ${food.title}
       
       </a>
@@ -341,9 +341,19 @@ function render(itemServices) {
     `
   })
   listService.innerHTML = itemService.join(" ")
-  
+  document.querySelectorAll(".item-voucher").forEach((item, index) => {
+    item.addEventListener("click", () => {
+
+      handleItemClick(itemServices[index]);
+    });
+  });
   
 
+}
+function handleItemClick(itemData) {
+  
+  console.log("Clicked item data:", itemData);
+  localStorage.setItem("product", JSON.stringify(itemData));
 }
 listBtnVoucher.forEach((item,index) => {
     let itemServices = serviceListitem[index]

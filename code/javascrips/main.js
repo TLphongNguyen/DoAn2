@@ -8,17 +8,6 @@ const btnPrev = document.querySelector('.button-prev')
 
 
 let lengItem = imgItems.length-1;
-
-
-
-
-
-
-
-// slider
-
-
-
 btnNext.onclick = () => {
   
   if(slinerNumber + 1 > lengItem) {
@@ -468,11 +457,11 @@ function render(itemServices) {
   const itemService = itemServices.map((food) =>{
     return ` 
     <li class="item-voucher">
-      <a href="#" class="voucher-img">
+      <a href="/code/product/product.html" class="voucher-img">
         <img src="${food.img}" alt="">
       </a>
       <span class="voucher-sale">${food.sale}</span>
-      <a href="" class="title-link">
+      <a href="/code/product/product.html" class="title-link">
         ${food.title}
       
       </a>
@@ -483,14 +472,28 @@ function render(itemServices) {
     `
   })
   listService.innerHTML = itemService.join(" ")
-  console.log(itemService)
+
+
+    document.querySelectorAll(".item-voucher").forEach((item, index) => {
+      item.addEventListener("click", () => {
+
+        handleItemClick(itemServices[index]);
+      });
+    });
+
+  
   
 
+}
+function handleItemClick(itemData) {
+  
+  console.log("Clicked item data:", itemData);
+  localStorage.setItem("product", JSON.stringify(itemData));
 }
 // render lai list item
 const listCategory = document.querySelectorAll('.item-category')
 listCategory.forEach((itemcategory,index) => {
-  console.log(index)
+  
   let itemServices = serviceListitem[index]
   itemcategory.onclick = () => {
   console.log("new ",index)
@@ -499,7 +502,7 @@ listCategory.forEach((itemcategory,index) => {
     itemcategory.classList.add('active-item')
     render(itemServices)
   }
-  console.log(itemServices)
+
   render(serviceListitem[0])
   
 })
